@@ -2,6 +2,11 @@
 
 Learn PyTorch with project-based tutorials. These tutorials demonstrate modern techniques with readable code and use regular data from the internet.
 
+### My edits so far
+
+- fixed the encoding problem (for *char-rnn-classification*) python3 problem?
+- added CUDA support for *char-rnn-classification*
+
 ## Tutorials
 
 #### Series 1: RNNs for NLP
