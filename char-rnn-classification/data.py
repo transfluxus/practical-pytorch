@@ -1,3 +1,4 @@
+# encoding: utf-8   
 import torch
 import glob
 import unicodedata
@@ -10,6 +11,7 @@ def findFiles(path): return glob.glob(path)
 
 # Turn a Unicode string to plain ASCII, thanks to http://stackoverflow.com/a/518232/2809427
 def unicodeToAscii(s):
+    s = s.decode('utf-8')
     return ''.join(
         c for c in unicodedata.normalize('NFD', s)
         if unicodedata.category(c) != 'Mn'
